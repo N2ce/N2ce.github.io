@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--HK_CPU-WFN-WYY: Home Page-->
+<html lang="en", dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+      HK_CPU-WFN-WYY: Home page
+    </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loadinganimation.css">
+    <link rel="stylesheet" href="./css/aos.css" />
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+    <!--import bootstraps-->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--responsive-->
+  </head>
+  <body>
+    <div class="loading-wrapper">
+    <div class="la-ball-atom la-dark la-3x">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        setTimeout(function(){
+          $(".loading-wrapper").fadeOut(500);
+        }, 1000);
+      })
+    </script>
+    <!--Loading animation-->
+
+
+    <div class="navbar">
+      <a href="Home.html" data-attr="img"><img class="logo" src="./image/team/IMG_3206.PNG"></a>
+      <div style="float: right;">
+        <div class="dropdown">
+          <button class="dropbtn"><b>TEAM</b> </button>
+          <div class="dropdown-content">
+            <a href="Team.html"> Team </a>
+            <a href="Attributions.html"> Attributions </a>
+            <a href="Collaborations.html"> Collaborations </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"> <b>PROJECT</b> </button>
+          <div class="dropdown-content">
+            <a href="Communication.html"> Communication </a>
+            <a href="Contribution.html"> Contribution </a>
+            <a href="Description.html"> Description </a>
+            <a href="Design.html"> Design </a>
+            <a href="Engineering.html"> Engineering </a>
+            <a href="Notebook.html"> Notebook </a>
+            <a href="Implementation.html"> Proposed Implementation </a>
+            <a href="Results.html"> Results </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><b>PARTS</b> </button>
+          <div class="dropdown-content">
+            <a href="Part_Collection.html"> Parts Collection </a>
+            <a href="Parts.html"> Parts </a>
+          </div>
+        </div>
+        <a class="link" href="Safety.html"> <b>SAFETY</b> </a>
+        <a class="link" href="Human_Practices.html"> <b>HUMAN PRACTICES</b>  </a>
+        <!--<a href="Excellence.html"> Free artwork & Subtitle generator </a>-->
+        <a class="link" href="Model.html"><b> MODELING </b></a>
+        </div>
+      </div>
+    </div>
+    <!--Navbar HTML-->
+
+  <div class="main-container">
+    <div class="slide">
+      <div class="text" style= "padding: 50PX;">
+        <h1>Engineering</h1>
+        <h3>Design</h3>
+        <p>
+        <b>Choice of chassis</b><br>
+        To test whether spider silk will have variable properties when different spidroins are mixed, our aim is to engineer some recombinant <i>E. coli</i> to express the spidroins that we are interested in so that we can test our hypothesis.
+        We chose <i>E. coli</i> as our chassis as it is easy to handle and has a rapid growth rate compared to other chassis, such as yeast or mammalian cell lines. Also, it is easy to transform, which is crucial point of concern in a high school setting.<br>
+        <b>Choice of strains</b><br>
+        In the process of creating the recombinant plasmid and expressing spidroin, we will use both the Dh5α strain and the BL21 strain. Due to the nature of digest and ligate assembly, the chance of the recombinant plasmid in concern being formed is very low.
+        To amplify and separate the required plasmid from other undesired plasmids, we will first transform the plasmids into <i>E. coli</i> Dh5α so that they can be plated, selected and screened with colony PCR.
+        During the process, the recombinant <i>E. coli</i> will divide and replicate to produce more copies of itself, as well as making copies of the desired recombinant plasmid.
+        As <i>E. coli</i> Dh5α grows rapidly, using this strain enables the rapid production of large amounts of plasmids in a short period of time. However, it is has reduced protein expression capabilities.
+        To compensate for this, we will extract the desired recombinant plasmid from <i>E. coli</i> Dh5α by miniprep, and transforming <i>E. coil</i> BL21 with the miniprepped plasmids.
+        This way, we can take advantage of the superior expression capabilities of <i>E. coli</i> BL21 for expressing the spidroins that we need, as well as using Dh5α for plasmid amplification.<br>
+        <b>Assembly of plasmid</b><br>
+        To assemble the recombinant plasmid that we want, which contains the gene of interest and other regulatory sequences required for expression, such as ribosome binding site and indicible promoter, we will use digest and ligate assembly to create the plasmid.
+        We chose digest and ligate assembly as this is cheaper and easier to implement compared to other methods like Gibson assembly.
+        The backbone of our choice is the <a href="https://www.thermofisher.com/order/catalog/product/K30001#/K30001">pET SUMO</a> expression plasmid because we have already obtained this plasmid, and continue using it will reduce the financial burden of our team.
+        This plasmid also fits our use case as we want the expression to be inducible so that it can be finely controlled. We modified the plasmid by removing the SUMO tag, as it may interfere with the folding of spidroin.
+        The backbone also included a his-tag, which aids in the purification process.
+        We ordered the gene of interest from IDT, which removes the hassle of obtaining real spiders and extracting DNA/ RNA from them.<br>
+        <b>Testing the design</b><br>
+        To test the design, we will assemble it in the lab and transform it into <i>E. coli</i> as mentioned above. After transformation, we will culture the recombinant <i>E. coli</i> in LB broth and add IPTG to express the spidroin.
+        We then extract the spidroin via his-tag chromatography and check if the result is as expected or not by SDS-PAGE. If the result is as expected, we should see a band on the gel at the position corresponding to its molecular weight.
+        </p>
+        <h3>Build</h3>
+        <p>
+        <b>Assembly coniderations</b><br>
+        As there is only one component to be inserted into the plasmid backbone, that is, our gene of interest, we decided to use digest and ligate assembly. Due to the nature of digest and ligate assembly, scar sites will be introduced.
+        However, it is expected that the scar sites will not interfere with the expression of the protein as translation only starts at the start codon and should end at the stop codons. Thus, the ribosome should ignore the scar sites before and after the gene of interest.<br>
+        <b>Verification and expression of plasmid</b><br>
+        To verify the assembled plasmid actually contains the insert, we will perform colony PCR on the colonies that have grown on an antibiotic-agar plate. The miniprepped plasmid will then be used for sequencing to confirm sequence integrity.
+        We will use sanger sequencing as it is the most reliable sequencing method. The primers that will be used binds to the plasmid backbone and should be able to sequence the full insert.
+        We also double-check by doing a restriction digest on the miniprepped plasmid, and see if the digest profile matches the theoretical digest profile. Since we used two restriction sites in the assembly process, we do not have to worry about inverted inserts.
+        To express the spidroin in concern, we have to transfer the plasmid to another chassis, namely from <i>E. coli</i> Dh5α to <i>E. coli</i> BL21. To do this, we will take the miniprepped plasmid and do another transformation into <i>E. coli</i> BL21 for expression.<br>
+        <b>Validation of expression products</b><br>
+        To ensure the spidroin expressed is what we want, we will perform SDS-PAGE on the extracted protein. It is expected that we should see a band present according to the molecular weight of the spidroin.
+        </p>
+        <h3>Test</h3>
+        <p>
+        <b>Testing for expression</b><br>
+        To validate that the spidroins are expressed correctly, we will perform SDS-PAGE on the extracted proteins. A vertical gel electrophoresis tank will be needed. This will provide qualitative measurements of the spidroin in concern.
+        To quantify the spidroins being expressed, western blotting can be performed. However, due to the financial and instrumental constraints, we are unable to perform this step.
+        To ensure the proteins detected is not contamination, we will also run negative samples as well as eluates during the protein extraction process to ensure that the protein band we detected is actually spidroin.
+        To enhance the specificity of the test, western blotting can be used if possible. After SDS-PAGE, sliver stain will be used to visualize the proteins in the acrylamide gel.
+        </p>
+      </div>
+    </div>
+
+
+    <footer class="footer-slide">
+      <div class="footer-col" style="width: 45%; padding: 5%; padding-bottom: 0;">
+        Sponsors:
+        <p><a href="https://sg.idtdna.com/pages"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Sponsor_idt.svg" style="width: 40%;"></a><a href="https://www.benchling.com/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Sponsor_benchling.svg" style="width: 40%; padding-bottom: 5%;"></a></p>
+        <p><a href="https://www.mathworks.com/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Mathworks.png" style="width: 40%;"></a><a href="https://www.twistbioscience.com/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Sponsor_twist.svg" style="width: 40%;"></a></p>
+      </div>
+      <div class="footer-col" style="width: 40%; padding: 5%; margin-left: 15%; padding-bottom: 0;">
+        Contact Us!
+        <p><a href="https://www.instagram.com/igem_cpuwfnwyy/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_IG_icon.svg" style="width: 15%;"></a></p>
+        <p><a href="mailto:hk.cpuwfnwyy@gmail.com"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Gmail_icon.svg" style="width: 15%;"></p>
+      </div>
+    </footer>
+
+
+
+
+  <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
+    </body>
+</html>

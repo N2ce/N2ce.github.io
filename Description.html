@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--HK_CPU-WFN-WYY: Home Page-->
+<html lang="en", dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+      HK_CPU-WFN-WYY: Home page
+    </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loadinganimation.css">
+    <link rel="stylesheet" href="./css/aos.css" />
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+    <!--import bootstraps-->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--responsive-->
+  </head>
+  <body>
+    <div class="loading-wrapper">
+    <div class="la-ball-atom la-dark la-3x">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        setTimeout(function(){
+          $(".loading-wrapper").fadeOut(500);
+        }, 1000);
+      })
+    </script>
+    <!--Loading animation-->
+
+
+    <div class="navbar">
+      <a href="Home.html" data-attr="img"><img class="logo" src="./image/team/IMG_3206.PNG"></a>
+      <div style="float: right;">
+        <div class="dropdown">
+          <button class="dropbtn"><b>TEAM</b> </button>
+          <div class="dropdown-content">
+            <a href="Team.html"> Team </a>
+            <a href="Attributions.html"> Attributions </a>
+            <a href="Collaborations.html"> Collaborations </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"> <b>PROJECT</b> </button>
+          <div class="dropdown-content">
+            <a href="Communication.html"> Communication </a>
+            <a href="Contribution.html"> Contribution </a>
+            <a href="Description.html"> Description </a>
+            <a href="Design.html"> Design </a>
+            <a href="Engineering.html"> Engineering </a>
+            <a href="Notebook.html"> Notebook </a>
+            <a href="Implementation.html"> Proposed Implementation </a>
+            <a href="Results.html"> Results </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><b>PARTS</b> </button>
+          <div class="dropdown-content">
+            <a href="Part_Collection.html"> Parts Collection </a>
+            <a href="Parts.html"> Parts </a>
+          </div>
+        </div>
+        <a class="link" href="Safety.html"> <b>SAFETY</b> </a>
+        <a class="link" href="Human_Practices.html"> <b>HUMAN PRACTICES</b>  </a>
+        <!--<a href="Excellence.html"> Free artwork & Subtitle generator </a>-->
+        <a class="link" href="Model.html"><b> MODELING </b></a>
+        </div>
+      </div>
+    </div>
+    <!--Navbar HTML-->
+
+  <div class="main-container">
+    <div class="slide">
+      <div class="text" style= "padding: 50PX;">
+        <h1>Description</h1>
+        <p>With plenty of alternatives during shopping and constant replacement of outdated products, often do consumers treat things like newly-bought clothes, phones as a spur-of-the-moment thing. For instance, clothes are regularly discarded just after a few wears, ending up as one of the garbage in the landfills. Clearly, the reason behind this is very simple--it ain’t new and fashionable enough. Sounds quite ridiculous right? And the phenomenon is so-called the Fast-Fashion. Undoubtedly, this phenomenon is omnipresent in this day and age. The fact that people’s insatiable and anxious desire for fresh looks has been springing up at an alarming rate since the industrial revolution prompted us to believe that we will be behind trends as soon as we see them being worn. So as to meet the needs of the customers, clothes are made in a rushed manner for the rapid replacement of old-fashioned textile, or brands are selling low-quality merchandise, resulting in the swift disposal of clothes, which poses a grave threat to the environment and society.
+        </p>
+        <p>In textile production, the major detrimental effect is the emission of greenhouse gases during the synthesis of textiles like nylon and polyester etc. Take nylon as an example. As nylon is mainly derived from petroleum-based subunits, nitrogen oxides, a greenhouse gas that is 3000 times more potent than carbon dioxide, is produced on a large scale, aggravating the issue of global warming. Besides, as the manufacture of nylon is a thirsty process, an immense amount of freshwater resources are consumed for the cooling of the fibres, which causes severe water wastage.</p>
+        <p>As a matter of fact, the fashion industry is the second largest polluter in the world, just after the oil industry. Driving up waste by recklessly releasing poorly-made clothes, mountainous clothes end up in incinerators and landfills. Non-biodegradable synthetic fibres like polyester, plastic fibre take up to 200 years to decompose completely, leading to disastrous waste accumulation. Along with the toxicity of substances involved, soil degradation takes place, as well as land pollution.</p>
+        <p>Inspired by Fast Fashion, which is a serious threat to the environment, we came up with the idea of utilizing biodegradable ‘silk’, the spider silk. As a matter of fact, spider silk is a kind of natural protein biomaterials produced by spiders. Just as you know, they are far more sustainable than products derived from oil since the ingredients are all renewable, and unlike petroleum-derived fabrics, they can be degraded more easily, resulting in less pollution. Therefore in this project, E. coli BL21 is aimed to be engineered to produce spidroin, which is the basic unit of spider silk. Masp1 and Masp2 from dragline, flagelliform silk protein from capture spiral silk and pyriform silk protein (PiSp) from piriform silk are planned to be manufactured. Furthermore, the mechanical properties of silk products, like strength, will be adjusted by controlling the proportion of spidroin with different toughness and elasticity. Thus, we hope to obtain spidroin with different properties to cater for different needs, like making clothes or fishing lines, bringing an environmentally friendly solution to Fast Fashion.</p>
+        <p>In spite of the fact that spider silk is a desirable material for a variety of applications, the amount produced by spiders individually is so limited that mass production is nigh on impossible. Owing to its low quantity supplied to the market, spider silk has been perceived as a luxurious product, hindering its considerable potential in other perspectives. Unquestionably, the synthetic spider silk market is thriving as consumer demand grows for sustainable alternatives to toxic chemicals. It is our firm conviction that the advance in synthetic spider silk could have brought phenomenal revolutions to not only the clothing industry, but also the manufacturing industry, etc. Seen in this light, we aim to provide a promising alternative way of spider silk production, in hope of scale up production.         </p>
+      </div>
+    </div>
+
+
+
+    <footer class="footer-slide">
+      <div class="footer-col" style="width: 45%; padding: 5%; padding-bottom: 0;">
+        Sponsors:
+        <p><a href="https://sg.idtdna.com/pages"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Sponsor_idt.svg" style="width: 40%;"></a><a href="https://www.benchling.com/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Sponsor_benchling.svg" style="width: 40%; padding-bottom: 5%;"></a></p>
+        <p><a href="https://www.mathworks.com/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Mathworks.png" style="width: 40%;"></a><a href="https://www.twistbioscience.com/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Sponsor_twist.svg" style="width: 40%;"></a></p>
+      </div>
+      <div class="footer-col" style="width: 40%; padding: 5%; margin-left: 15%; padding-bottom: 0;">
+        Contact Us!
+        <p><a href="https://www.instagram.com/igem_cpuwfnwyy/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_IG_icon.svg" style="width: 15%;"></a></p>
+        <p><a href="mailto:hk.cpuwfnwyy@gmail.com"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Gmail_icon.svg" style="width: 15%;"></p>
+      </div>
+    </footer>
+  <!--footer-->
+
+
+
+
+  <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
+    </body>
+</html>

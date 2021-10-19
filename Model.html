@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--HK_CPU-WFN-WYY: Home Page-->
+<html lang="en", dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+      HK_CPU-WFN-WYY: Home page
+    </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loadinganimation.css">
+    <link rel="stylesheet" href="./css/aos.css" />
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+    <!--import bootstraps-->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--responsive-->
+  </head>
+  <body>
+    <div class="loading-wrapper">
+    <div class="la-ball-atom la-dark la-3x">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        setTimeout(function(){
+          $(".loading-wrapper").fadeOut(500);
+        }, 1000);
+      })
+    </script>
+    <!--Loading animation-->
+
+
+    <div class="navbar">
+      <a href="Home.html" data-attr="img"><img class="logo" src="./image/team/IMG_3206.PNG"></a>
+      <div style="float: right;">
+        <div class="dropdown">
+          <button class="dropbtn"><b>TEAM</b> </button>
+          <div class="dropdown-content">
+            <a href="Team.html"> Team </a>
+            <a href="Attributions.html"> Attributions </a>
+            <a href="Collaborations.html"> Collaborations </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"> <b>PROJECT</b> </button>
+          <div class="dropdown-content">
+            <a href="Communication.html"> Communication </a>
+            <a href="Contribution.html"> Contribution </a>
+            <a href="Description.html"> Description </a>
+            <a href="Design.html"> Design </a>
+            <a href="Engineering.html"> Engineering </a>
+            <a href="Notebook.html"> Notebook </a>
+            <a href="Implementation.html"> Proposed Implementation </a>
+            <a href="Results.html"> Results </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><b>PARTS</b> </button>
+          <div class="dropdown-content">
+            <a href="Part_Collection.html"> Parts Collection </a>
+            <a href="Parts.html"> Parts </a>
+          </div>
+        </div>
+        <a class="link" href="Safety.html"> <b>SAFETY</b> </a>
+        <a class="link" href="Human_Practices.html"> <b>HUMAN PRACTICES</b>  </a>
+        <!--<a href="Excellence.html"> Free artwork & Subtitle generator </a>-->
+        <a class="link" href="Model.html"><b> MODELING </b></a>
+        </div>
+      </div>
+    </div>
+    <!--Navbar HTML-->
+
+  <div class="main-container">
+    <div class="slide">
+      <div class="text" style= "padding: 50PX;">
+        <h1>Modeling</h1>
+        <h3>Aims</h3>
+        <p>In our project, <i>E.coli</i> BL21 is engineered to produce spidroin by protein expression. As there’re many types of spidroin and each has its specific alternative properties,  we can make silks with different usage and properties by controlling the production of spidroins. </p>
+        <p>We aimed to achieve this target by proportional expression, while each recombinant plasmid contains independent inducible promoters. The gene expression thus the percentages of spidroins can be controlled by adjusting the concentrations of different inducers, IPTG and arabinose. </p>
+        <p>To estimate the product amount, we use MATLAB Simbiology for simulating the proportional expression. The relationship between product and inducer can be revealed by equations introduced and the concentration-time graph plotted. By developing models using Michaelis-Menten kinetics and mass actions kinetics, reactions between inducer and repressor can be shown and thus illustrated proportional gene expression. </p>
+        <p>For simulations of both inducers, at t=0, 0.005M of inducers and a largely excess amount of DNA binded with the corresponding depressor are invested. The simulation was then run for 10 hours. The amounts of the inducers invested at the beginning  were then changed and the simulations were performed again. By repeating the above steps, standard curves showing the relationship between inducers and protein concentration can then be obtained.</p>
+        <h3>Abbreviations</h3>
+        <table border="1" style="width:100%; padding: 4%;">
+          <tr>
+            <th>abbreviation</th>
+            <th>meaning</th>
+            <th>value</th>
+            <th>unit</th>
+            <th>reference</th>
+          </tr>
+          <tr>
+            <th>K<sub>ia</sub></th>
+            <th>Rate constant of forward reaction in IPTG association</th>
+            <th>1.1e-5</th>
+            <th>M<sup>-1</sup>s<sup>-1</sup></th>
+            <th>[1]</th>
+          </tr>
+          <tr>
+            <th>K<sub>-ia</sub></th>
+            <th>Rate constant of backward reaction in IPTG association</th>
+            <th>0.3</th>
+            <th>s<sup>-1</sup></th>
+            <th>[1]</th>
+          </tr>
+          <tr>
+            <th>K<sub>aa</sub></th>
+            <th>Rate constant of forward reaction in arabinose association</th>
+            <th>2.4e-7</th>
+            <th>M<sup>-1</sup>s<sup>-1</sup></th>
+            <th>[2]</th>
+          </tr>
+          <tr>
+            <th>K<sub>-aa</sub></th>
+            <th>Rate constant of backward reaction in arabinose association</th>
+            <th>1.5</th>
+            <th>s<sup>-1</sup></th>
+            <th>[2]</th>
+          </tr>
+          <tr>
+            <th>V<sub>max</sub></th>
+            <th>maximum rate achieved by the system</th>
+            <th>1000</th>
+            <th>sugars/protein/min</th>
+            <th>[6]</th>
+          </tr>
+          <tr>
+            <th>K<sub>M</sub></th>
+            <th>substrate concentration at which the reaction rate is half of V<sub>max</sub></th>
+            <th>300</th>
+            <th>μM</th>
+            <th>[6]</th>
+          </tr>
+          <tr>
+            <th>K<sub>trc</sub></th>
+            <th>Rate constant of transcription</th>
+            <th>2.4</th>
+            <th>μM<sup>-1</sup>min<sup>-1</sup></th>
+            <th>[3]</th>
+          </tr>
+          <tr>
+            <th>K<sub>trl</sub></th>
+            <th>Rate constant of translation</th>
+            <th>6e4</th>
+            <th>M<sup>-1</sup>s<sup>-1</sup></th>
+            <th>[4]</th>
+          </tr>
+          <tr>
+            <th>K<sub>de</sub></th>
+            <th>Rate constant of mRNA decay</th>
+            <th>0.0173</th>
+            <th>s<sup>-1</sup></th>
+            <th>Decay constant =ln2/40
+              [5]</th>
+          </tr>
+        </table>
+        <h3>Reactions</h3>
+        <p>We have introduced 4 equations for each inducer, IPTG and arabinose. The reaction(F) uses Michaelis-Menten kinetics as the model, while the remaining use mass actions kinetics. The differential equations of each component will be mentioned in the next session.</p>
+        <img src="./image/team/IGEM reactions.jpg">
+        <h3>Equations</h3>
+        <p>The equations introduced are listed as follows:</p>
+        <img src="./image/team/(2)modelling equation ODE(arabinose).jpg">
+        <img src="./image/team/(3)modelling equation ODE(IPTG).jpg">
+        <h3>Matlab</h3>
+        <table border="1" style="width:100%; padding: 4%;">
+          <tr>
+            <th>inducers concentration</th>
+            <th>iptg</th>
+            <th>arabinose</th>
+          </tr>
+          <tr>
+            <th>0M</th>
+            <th><img src="./image/team/0iptg.jpg"></th>
+            <th><img src="./image/team/0arab.jpg"></th>
+          </tr>
+          <tr>
+            <th>0.001M</th>
+            <th><img src="./image/team/0.001iptg.jpg"></th>
+            <th><img src="./image/team/0.001arab.jpg"></th>
+          </tr>
+          <tr>
+            <th>0.002M</th>
+            <th><img src="./image/team/0.002iptg.jpg"></th>
+            <th><img src="./image/team/0.002arab.jpg"></th>
+          </tr>
+          <tr>
+            <th>0.003M</th>
+            <th><img src="./image/team/0.003iptg.jpg"></th>
+            <th><img src="./image/team/0.003arab.jpg"></th>
+          </tr>
+          <tr>
+            <th>0.004M</th>
+            <th><img src="./image/team/0.004iptg.jpg"></th>
+            <th><img src="./image/team/0.004arab.jpg"></th>
+          </tr>
+          <tr>
+            <th>0.005M</th>
+            <th><img src="./image/team/0.005iptg.jpg"></th>
+            <th><img src="./image/team/0.005arab.jpg"></th>
+          </tr>
+
+        </table>
+        <h3>Reference</h3>
+        <ol style="font-size: 17px;">
+          <li>Jia Xu and Kathleen S. Matthews. (2009, 6 9). Flexibility in the Inducer Binding Region is Crucial for Allostery in the Escherichia coli Lactose Repressor. <i>Biochemistry</i></li>
+          <li>Miller, D. M. (1983, 11 25). Rates of Ligand Binding to Periplasmic Proteins Involved in Bacterial.<i>THE ,JOURNAI. OF BIOLOGICAL CHEMISTRY.</i></li>
+          <li>Philipp Thomas, Hannes Matuschek. (2012, 12 24). Computation of biochemical pathway ﬂuctuations beyond the linear noiseapproximation using iNA.<i> IEEE International Conference on Bioinformatics and Biomedicine (BIBM).</i></li>
+          <li>Hermioni Zouridis, Vassily Hatzimanikatis. (2007, 2 1). A Model for Protein Translation: Polysome Self-Organization Leads to Maximum Protein Synthesis Rates. Biophysical Journal.</li>
+          <li>S Pedersen, S Reeh. (1978, 11 9). Functional mRNA half lives in E. coli. <i>Mol Gen Genet.</i></li>
+          <li>Fritz, G. (2012, 2 15). <i> Strategies of Bacterial Gene Expression: Regulatory Mechanisms and Functional Aspects. Munich.</i></li>
+        </ol>
+      </div>
+    </div>
+
+
+
+    <footer class="footer-slide">
+      <div class="footer-col" style="width: 45%; padding: 5%; padding-bottom: 0;">
+        Sponsors:
+        <p><a href="https://sg.idtdna.com/pages"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Sponsor_idt.svg" style="width: 40%;"></a><a href="https://www.benchling.com/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Sponsor_benchling.svg" style="width: 40%; padding-bottom: 5%;"></a></p>
+        <p><a href="https://www.mathworks.com/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Mathworks.png" style="width: 40%;"></a><a href="https://www.twistbioscience.com/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Sponsor_twist.svg" style="width: 40%;"></a></p>
+      </div>
+      <div class="footer-col" style="width: 40%; padding: 5%; margin-left: 15%; padding-bottom: 0;">
+        Contact Us!
+        <p><a href="https://www.instagram.com/igem_cpuwfnwyy/"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_IG_icon.svg" style="width: 15%;"></a></p>
+        <p><a href="mailto:hk.cpuwfnwyy@gmail.com"><img src="./image/footerlogo/T--HK_CPU-WFN-WYY--Home_Gmail_icon.svg" style="width: 15%;"></p>
+      </div>
+    </footer>
+  <!--footer-->
+
+
+
+
+  <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
+    </body>
+</html>
